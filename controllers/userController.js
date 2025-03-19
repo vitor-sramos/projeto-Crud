@@ -1,7 +1,7 @@
 const db = require("../db/db");
 
 const userController = {
-    getUser: (res, res) => {
+    getUser: (req, res) => {
         const q = "select * from usuario";
 
         db.query(q, (err, data) => {
